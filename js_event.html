@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Events</title>
+</head>
+<body>
+  <h3>JavaScript Events Example</h3>
+
+  <!-- Click Event -->
+  <button onclick="sayHello()">Click Me</button>
+  <p id="clickResult"></p>
+
+  <!-- Mouse Events -->
+  <p id="hoverText" onmouseover="mouseOver()" onmouseout="mouseOut()">
+    Hover over this text
+  </p>
+
+  <script>
+    function sayHello() {
+      document.getElementById("clickResult").innerText = "Button was clicked!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Strings</title>
+</head>
+<body>
+  <h2>JavaScript Strings Example</h2>
+  <p id="demo"></p>
+
+  <script>
+    let text = "Hello, Mother!";
+    
+    
+    let length = text.length;
+    
+   
+    let upper = text.toUpperCase();
+    let lower = text.toLowerCase();
+    
+    
+    let part = text.slice(7, 17);
+    
+    
+    let replaced = text.replace("JavaScript", "World");
+    
+    document.getElementById("demo").innerHTML =
+      "Original: " + text + "<br>" +
+      "Length: " + length + "<br>" +
+      "Uppercase: " + upper + "<br>" +
+      "Lowercase: " + lower + "<br>" +
+      "Slice(7–17): " + part + "<br>" +
+      "Replaced: " + replaced;
+  </script>
+</body>
+</html>

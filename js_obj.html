@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Objects</title>
+</head>
+<body>
+  <h3>JavaScript Object Example</h3>
+  <p id="output"></p>
+
+  <script>
+   
+    let student = {
+      name: "Anna",
+      age: 20,
+      course: "Computer Science",
+      greet: function() {
+        return "Hello, my name is " + this.name;
+      }
+    };
+
+    
+    let result = "";
+    result += "Name: " + student.name + "<br>";
+    result += "Age: " + student.age + "<br>";
+    result += "Course: " + student.course + "<br>";
+    result += "Greeting: " + student.greet();
+
+    document.getElementById("output").innerHTML = result;
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Assignment</title>
+</head>
+<body>
+  <h3>Add Two Numbers</h3>
+  <input id="num1" type="number">
+  <input id="num2" type="number">
+  <button onclick="add()">=</button>
+  <p>Result: <span id="result">0</span></p>
+
+  <script>
+    function add() {
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      document.getElementById("result").innerText = a + b;
+    }
+  </script>
+</body>
+</html>
